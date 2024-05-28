@@ -1,5 +1,5 @@
 1.0.0:
-    - First version of Small GDPR
+    - First version of GDPR
 1.1.0:
     - Added settings in modal window
     - Added Bootrap 3 styling
@@ -163,3 +163,5 @@
     - Modal reload logic updated
 1.27.0:
     - French translation (thanks Jean-Daniel Kneubühler)
+2.0.0:
+    - Init plugin for WebBook author

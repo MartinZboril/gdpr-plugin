@@ -1,8 +1,8 @@
 <?php
 
-namespace JanVince\SmallGDPR\Updates;
+namespace WebBook\GDPR\Updates;
 
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use October\Rain\Database\Updates\Migration;
 use Config;
 use Flash;

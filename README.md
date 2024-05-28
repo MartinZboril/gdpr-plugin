@@ -1,4 +1,4 @@
-# Small GDPR
+# GDPR
 > Simple plugin to cope with GDPR
 
 
@@ -7,19 +7,19 @@
 **GitHub** clone into `/plugins` dir:
 
 ```sh
-git clone https://github.com/jan-vince/smallgdpr
+git clone https://github.com/WEBBOOK-plugins/gdpr
 ```
 
 **OctoberCMS backend**
 
-Just look for 'Small GDPR' in search field in:
+Just look for 'GDPR' in search field in:
 > Settings > Updates & Plugins > Install plugins
 
 ### Permissions
 
 > Settings > Administrators
 
-You can set permissions to restrict access to *Settings > Small plugins > Small GDPR* and to messages list.
+You can set permissions to restrict access to *Settings > CATEGORY_CMS > GDPR* and to messages list.
 
 
 ## Quick start guide
@@ -33,11 +33,11 @@ You can set permissions to restrict access to *Settings > Small plugins > Small 
 
 * Go to CMS part of October.
   * Add new Layout (or use your existing)
-  * Add component Small GDPR > Cookies bar (inside of your `body` tag).
+  * Add component GDPR > Cookies bar (inside of your `body` tag).
 
 * Go to CMS part of October.
   * Add new Page with URL `/gdpr`
-  * Add component Small GDPR > Manage cookies (inside any of your tags)
+  * Add component GDPR > Manage cookies (inside any of your tags)
 
 > Do not forget to add `{% scripts %}` tag to your layout page just before closing `body` tag! More info [in October docs](https://octobercms.com/docs/markup/tag-scripts).
 
@@ -51,7 +51,7 @@ You can set permissions to restrict access to *Settings > Small plugins > Small 
 
 The main idea is to create groups of cookies with JS scripts that you want to run on your website.
 
-#### Required 
+#### Required
 
 When turned on users cannot disable these groups in Manage cookies component and scripts will be always executed.
 
@@ -87,7 +87,7 @@ This scripts will never be executed
 
 You can limit scripts execution to specific pages URLs.
 
-### Tab: Cookies bar 
+### Tab: Cookies bar
 
 You can edit title and content of cookies bar.
 
@@ -95,7 +95,7 @@ If you want, you can select from pre-defined CSS styles.
 
 #### Buttons
 
-You can add one or more buttons to your cookies bar. 
+You can add one or more buttons to your cookies bar.
 
 ##### Allow all cookies
 
@@ -185,13 +185,13 @@ With component `Cookies bar` or `Manage cookies` you can access cookies settings
 
 
 ----
-> My thanks goes to:    
-> [OctoberCMS](http://www.octobercms.com) team members and supporters for this great system.   
-> [Brooke Cagle](https://unsplash.com/@brookecagle) for her photo.   
+> My thanks goes to:
+> [OctoberCMS](http://www.octobercms.com) team members and supporters for this great system.
+> [Brooke Cagle](https://unsplash.com/@brookecagle) for her photo.
 > [Font Awesome](http://fontawesome.io/icons/) for nice icons.
 > [OFFLINE](https://github.com/OFFLINE-GmbH) for inspiration from [his GDPR plugin](https://github.com/OFFLINE-GmbH/oc-gdpr-plugin)
 
-Created by [Jan Vince](http://www.vince.cz), freelance web designer from Czech Republic.
+Created by [WebOok](http://www.webbook.cz), freelance web designer from Czech Republic.
 
 
 

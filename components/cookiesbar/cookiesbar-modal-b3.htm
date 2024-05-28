@@ -7,7 +7,7 @@
             <div class="modal-header">
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                
+
                 <h4 class="modal-title">{{cookiesSettingsGet('cookies_manage_title')}}</h4>
 
             </div>
@@ -20,23 +20,23 @@
 
                 {% endif %}
 
-                {% partial '@list-cookies' 
-                    disablePageReload = cookiesSettingsGet('cookies_bar_disable_page_reload', 0) 
-                    disableSaveButton = true 
+                {% partial '@list-cookies'
+                    disablePageReload = cookiesSettingsGet('cookies_bar_disable_page_reload', 0)
+                    disableSaveButton = true
                     modal = true
                     customId = '-modal' %}
 
             </div>
 
             <div class="modal-footer">
-                
-                <button type="button" 
+
+                <button type="button"
                         data-dismiss="modal"
-                        class="btn btn-default">{{ 'janvince.smallgdpr::lang.settings.form_fields.cancel'|trans }}</button>
-                        
-                <button type="button" 
-                        id="cookies-manage-save-modal" 
-                        class="btn btn-primary">{{ 'janvince.smallgdpr::lang.settings.form_fields.save_settings'|trans }}</button>
+                        class="btn btn-default">{{ 'webbook.gdpr::lang.settings.form_fields.cancel'|trans }}</button>
+
+                <button type="button"
+                        id="cookies-manage-save-modal"
+                        class="btn btn-primary">{{ 'webbook.gdpr::lang.settings.form_fields.save_settings'|trans }}</button>
 
             </div>
 

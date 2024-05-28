@@ -1,8 +1,8 @@
 <?php
 
-namespace JanVince\SmallGDPR\FormWidgets;
+namespace WebBook\GDPR\FormWidgets;
 
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use Backend\Classes\FormWidgetBase;
 use October\Rain\Parse\Yaml;
 use Config;
@@ -46,7 +46,7 @@ class ImportPreset extends FormWidgetBase {
 
         } else {
 
-            $file = base_path(e(trans('janvince.smallgdpr::lang.formwidgets.importpreset.file_name_default')));
+            $file = base_path(e(trans('webbook.gdpr::lang.formwidgets.importpreset.file_name_default')));
 
         }
 
@@ -56,10 +56,10 @@ class ImportPreset extends FormWidgetBase {
         if(empty($file)) {
 
             Log::error('SG: Preset file was not found!');
-            Flash::error(trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.file_missing_error'));
+            Flash::error(trans('webbook.gdpr::lang.formwidgets.importpreset.flash.file_missing_error'));
 
             throw new AjaxException([
-                'X_OCTOBER_ERROR_MESSAGE' => trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.file_missing_error'),
+                'X_OCTOBER_ERROR_MESSAGE' => trans('webbook.gdpr::lang.formwidgets.importpreset.flash.file_missing_error'),
             ]);
 
         }
@@ -72,15 +72,15 @@ class ImportPreset extends FormWidgetBase {
             Log::error('SG: Preset file was not found!');
 
             throw new AjaxException([
-                'X_OCTOBER_ERROR_MESSAGE' => trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.file_error'),
+                'X_OCTOBER_ERROR_MESSAGE' => trans('webbook.gdpr::lang.formwidgets.importpreset.flash.file_error'),
             ]);
         }
 
-        
+
         /**
          * Try to parse import file
          */
-        
+
          $content = null;
 
         try {
@@ -92,7 +92,7 @@ class ImportPreset extends FormWidgetBase {
             Log::error('SG: Error parsing config file! ' . $e->getMessage());
 
             throw new AjaxException([
-                'X_OCTOBER_ERROR_MESSAGE' => trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.parse_error'),
+                'X_OCTOBER_ERROR_MESSAGE' => trans('webbook.gdpr::lang.formwidgets.importpreset.flash.parse_error'),
             ]);
         }
 
@@ -108,12 +108,12 @@ class ImportPreset extends FormWidgetBase {
             Log::error('SG: Error importing data! ' . $e->getMessage());
 
             throw new AjaxException([
-                'X_OCTOBER_ERROR_MESSAGE' => trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.import_error'),
+                'X_OCTOBER_ERROR_MESSAGE' => trans('webbook.gdpr::lang.formwidgets.importpreset.flash.import_error'),
             ]);
         }
 
         Log::info('SG: Data successfully imported!');
-        Flash::success(trans('janvince.smallgdpr::lang.formwidgets.importpreset.flash.import_successfull'));
+        Flash::success(trans('webbook.gdpr::lang.formwidgets.importpreset.flash.import_successfull'));
 
     }
 }

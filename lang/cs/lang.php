@@ -3,9 +3,9 @@
 return [
 
   'plugin' => [
-    'name' => 'Small GDPR',
+    'name' => 'GDPR',
     'description' => 'Nástroje pro GDPR',
-    'category' => 'Small plugins',
+    'category' => 'CATEGORY_CMS',
   ],
 
   'permissions' => [
@@ -123,12 +123,12 @@ return [
   ],
 
   'formwidgets' => [
-    
+
     'importpreset' => [
 
       'file_name' => 'Nebo vložte cestu k importovacímu souboru ručně',
       'file_name_comment' => 'Celá cesta k souboru.',
-      'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.cs.yaml',
+      'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.cs.yaml',
       'import_confirm' => 'Opravdu chcete importovat data?',
 
       'flash' => [
@@ -143,7 +143,7 @@ return [
 
       'file_name' => 'Cesta k souboru',
       'file_name_comment' => 'Kompletní cesta k exportovanému souboru.',
-      'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
+      'file_name_default' => '/storage/app/media/gdpr-export.yaml',
 
       'flash' => [
         'export_successfull' => 'Data byla úspěšně exportována',

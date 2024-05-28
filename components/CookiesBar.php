@@ -1,9 +1,9 @@
-<?php 
+<?php
 
-namespace JanVince\SmallGDPR\Components;
+namespace WebBook\GDPR\Components;
 
 use Cms\Classes\ComponentBase;
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Request;
 use Redirect;
@@ -20,8 +20,8 @@ class CookiesBar extends ComponentBase
     public function componentDetails() {
 
         return [
-            'name'        => 'janvince.smallgdpr::lang.components.cookies_bar.name',
-            'description' => 'janvince.smallgdpr::lang.components.cookies_bar.description'
+            'name'        => 'webbook.gdpr::lang.components.cookies_bar.name',
+            'description' => 'webbook.gdpr::lang.components.cookies_bar.description'
         ];
     }
 
@@ -35,8 +35,8 @@ class CookiesBar extends ComponentBase
 
         if(CookiesSettings::get('cookies_bar_add_styles', null))
         {
-        
-            switch( CookiesSettings::get('cookies_bar_add_styles', null)) 
+
+            switch( CookiesSettings::get('cookies_bar_add_styles', null))
             {
 
                 case 2:

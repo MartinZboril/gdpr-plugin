@@ -1,10 +1,10 @@
 <?php
 
-namespace JanVince\SmallGDPR;
+namespace WebBook\GDPR;
 
 use System\Classes\PluginBase;
 use System\Classes\PluginManager;
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use Config;
 use Backend;
 use Validator;
@@ -24,23 +24,23 @@ class Plugin extends PluginBase {
 
         return [
             'cookies' => [
-                'label' => 'janvince.smallgdpr::lang.settings.cookies.name',
-                'description' => 'janvince.smallgdpr::lang.settings.cookies.description',
+                'label' => 'webbook.gdpr::lang.settings.cookies.name',
+                'description' => 'webbook.gdpr::lang.settings.cookies.description',
                 'category'    => 'GDPR',
                 'icon' => 'icon-desktop',
-                'class' => 'JanVince\SmallGDPR\Models\CookiesSettings',
+                'class' => 'WebBook\GDPR\Models\CookiesSettings',
                 'keywords' => 'gdpr cookies bar consent',
                 'order' => 990,
-                'permissions' => ['janvince.smallgdpr.access_cookies_settings'],
+                'permissions' => ['webbook.gdpr.access_cookies_settings'],
             ],
         ];
     }
 
     public function registerComponents() {
-        
+
         return [
-            'JanVince\SmallGDPR\Components\CookiesBar' => 'cookiesBar',
-            'JanVince\SmallGDPR\Components\CookiesManage' => 'cookiesManage',
+            'WebBook\GDPR\Components\CookiesBar' => 'cookiesBar',
+            'WebBook\GDPR\Components\CookiesManage' => 'cookiesManage',
         ];
     }
 
@@ -69,17 +69,17 @@ class Plugin extends PluginBase {
     }
 
     public function registerFormWidgets() {
-        
+
         return [
-            'JanVince\SmallGDPR\FormWidgets\ImportPreset' => 'importpreset',
-            'JanVince\SmallGDPR\FormWidgets\ExportPreset' => 'exportpreset',
+            'WebBook\GDPR\FormWidgets\ImportPreset' => 'importpreset',
+            'WebBook\GDPR\FormWidgets\ExportPreset' => 'exportpreset',
         ];
     }
 
     public function registerPageSnippets() {
-        
+
         return [
-            '\JanVince\SmallGDPR\Components\CookiesManage' => 'cookiesManage'
+            '\WebBook\GDPR\Components\CookiesManage' => 'cookiesManage'
         ];
     }
 }

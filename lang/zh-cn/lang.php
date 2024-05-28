@@ -124,14 +124,14 @@ return [
   ],
 
   'formwidgets' => [
-    
+
     'importpreset' => [
 
       'file_name' => '或者手动输入您的导入文件路径',
       'file_name_comment' => '文件的完整路径',
-      'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.en.yaml',
+      'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.en.yaml',
       'import_confirm' => '您真的要导入数据吗？',
-      
+
       'flash' => [
         'import_successfull' => '数据已成功导入',
         'import_error' => '导入数据失败。更多信息请查看系统日志',
@@ -144,7 +144,7 @@ return [
 
       'file_name' => '文件路径',
       'file_name_comment' => '导出文件的完整路径',
-      'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
+      'file_name_default' => '/storage/app/media/gdpr-export.yaml',
 
       'flash' => [
         'export_successfull' => '数据已成功导入',

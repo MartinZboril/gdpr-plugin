@@ -1,9 +1,9 @@
-<?php 
+<?php
 
-namespace JanVince\SmallGDPR\Components;
+namespace WebBook\GDPR\Components;
 
 use Cms\Classes\ComponentBase;
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Request;
 use Redirect;
@@ -20,8 +20,8 @@ class CookiesManage extends ComponentBase
     public function componentDetails() {
 
         return [
-            'name'        => 'janvince.smallgdpr::lang.components.cookies_manage.name',
-            'description' => 'janvince.smallgdpr::lang.components.cookies_manage.description'
+            'name'        => 'webbook.gdpr::lang.components.cookies_manage.name',
+            'description' => 'webbook.gdpr::lang.components.cookies_manage.description'
         ];
     }
 
@@ -36,7 +36,7 @@ class CookiesManage extends ComponentBase
         $this->page['sgCookies'] = CookiesSettings::getSGCookies();
         $this->page['sgCookiesLocalePrefix'] = CookiesSettings::getSGCookiesLocalePrefix();
     }
-    
+
     public function onRender() {
     }
 }

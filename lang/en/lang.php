@@ -3,9 +3,9 @@
 return [
 
   'plugin' => [
-    'name' => 'Small GDPR',
+    'name' => 'GDPR',
     'description' => 'Toolbox for GDPR',
-    'category' => 'Small plugins',
+    'category' => 'CATEGORY_CMS',
   ],
 
   'permissions' => [
@@ -124,14 +124,14 @@ return [
   ],
 
   'formwidgets' => [
-    
+
     'importpreset' => [
 
       'file_name' => 'Or enter your import file path manually',
       'file_name_comment' => 'Complete path to the file.',
-      'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.en.yaml',
+      'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.en.yaml',
       'import_confirm' => 'Do you really want to import your data?',
-      
+
       'flash' => [
         'import_successfull' => 'Data was imported successfully',
         'import_error' => 'Failed to import data. More information in the system log.',
@@ -144,7 +144,7 @@ return [
 
       'file_name' => 'Path to the file',
       'file_name_comment' => 'Complete path to the exported file.',
-      'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
+      'file_name_default' => '/storage/app/media/gdpr-export.yaml',
 
       'flash' => [
         'export_successfull' => 'Data was imported successfully',

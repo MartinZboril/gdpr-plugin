@@ -1,8 +1,8 @@
 <?php
 
-namespace JanVince\SmallGDPR\FormWidgets;
+namespace WebBook\GDPR\FormWidgets;
 
-use JanVince\SmallGDPR\Models\CookiesSettings;
+use WebBook\GDPR\Models\CookiesSettings;
 use Backend\Classes\FormWidgetBase;
 use Config;
 use Flash;
@@ -36,23 +36,23 @@ class ExportPreset extends FormWidgetBase {
         if (empty($data['value'])) {
 
             Log::error('SG: Settings data was not found!');
-            Flash::error(trans('janvince.smallgdpr::lang.formwidgets.exportpreset.flash.export_error'));
+            Flash::error(trans('webbook.gdpr::lang.formwidgets.exportpreset.flash.export_error'));
             return false;
         }
 
         try {
-            
+
             $dataParsed = Yaml::render($data['value']);
-            
+
         } catch (\Exception $e) {
-            
+
             Log::error('SG: Error parsing settings data! ' . $e->getMessage());
-            Flash::error(trans('janvince.smallgdpr::lang.formwidgets.exportpreset.flash.parse_error'));
+            Flash::error(trans('webbook.gdpr::lang.formwidgets.exportpreset.flash.parse_error'));
             return false;
         }
-        
 
-        
+
+
         try {
 
             File::put($path, $dataParsed);
@@ -60,12 +60,12 @@ class ExportPreset extends FormWidgetBase {
         } catch (\Exception $e) {
 
             Log::error('SG: Error saving exported data! ' . $e->getMessage());
-            Flash::error(trans('janvince.smallgdpr::lang.formwidgets.exportpreset.flash.export_error'));
+            Flash::error(trans('webbook.gdpr::lang.formwidgets.exportpreset.flash.export_error'));
             return false;
         }
 
         Log::info('SG: Data successfully exported!');
-        Flash::success(trans('janvince.smallgdpr::lang.formwidgets.exportpreset.flash.export_successfull'));
+        Flash::success(trans('webbook.gdpr::lang.formwidgets.exportpreset.flash.export_successfull'));
 
     }
 }

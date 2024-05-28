@@ -118,14 +118,14 @@ return [
   ],
 
   'formwidgets' => [
-    
+
     'importpreset' => [
 
       'file_name' => 'Tai kirjoita tuontitiedoston polku manuaalisesti',
       'file_name_comment' => 'Täydellinen polku tiedostoon.',
-      'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.fi.yaml',
+      'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.fi.yaml',
       'import_confirm' => 'Haluatko todella tuoda tietosi?',
-      
+
       'flash' => [
         'import_successfull' => 'Tietojen tuonti onnistui',
         'import_error' => 'Tietojen tuonti epäonnistui. Lisätietoja järjestelmälokista.',
@@ -138,7 +138,7 @@ return [
 
       'file_name' => 'Polku tiedostoon',
       'file_name_comment' => 'Täydellinen polku viedylle tiedostolle.',
-      'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
+      'file_name_default' => '/storage/app/media/gdpr-export.yaml',
 
       'flash' => [
         'export_successfull' => 'Tiedot tuotiin onnistuneesti',

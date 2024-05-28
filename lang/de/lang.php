@@ -3,9 +3,9 @@
 return [
 
     'plugin' => [
-        'name' => 'Small GDPR',
+        'name' => 'GDPR',
         'description' => 'Toolbox for GDPR',
-        'category' => 'Small plugins',
+        'category' => 'CATEGORY_CMS',
     ],
 
     'permissions' => [
@@ -113,7 +113,7 @@ return [
 
             'file_name' => 'Oder geben Sie Ihren Importdateipfad manuell ein.',
             'file_name_comment' => 'Vollständiger Pfad zur Datei.',
-            'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.en.yaml',
+            'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.en.yaml',
             'import_confirm' => 'Möchten Sie Ihre Daten wirklich importieren?',
 
             'flash' => [
@@ -129,7 +129,7 @@ return [
 
             'file_name' => 'Pfad zur Datei',
             'file_name_comment' => 'Vollständiger Pfad zur exportierten Datei.',
-            'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
+            'file_name_default' => '/storage/app/media/gdpr-export.yaml',
 
             'flash' => [
                 'export_successfull' => 'Daten wurden erfolgreich importiert',

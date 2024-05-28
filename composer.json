@@ -1,5 +1,5 @@
 {
-    "name": "janvince/smallgdpr-plugin",
+    "name": "webbook/gdpr-plugin",
     "type": "october-plugin",
     "description": "None",
     "require": {

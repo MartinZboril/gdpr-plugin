@@ -1,6 +1,6 @@
 <?php
 
-namespace JanVince\SmallGDPR\Models;
+namespace WebBook\GDPR\Models;
 
 use Model;
 use App;
@@ -30,9 +30,9 @@ class CookiesSettings extends Model {
         'cookies_bar_buttons'
     ];
 
-    public $requiredPermissions = ['janvince.smallgdpr.access_cookies_settings'];
+    public $requiredPermissions = ['webbook.gdpr.access_cookies_settings'];
 
-    public $settingsCode = 'janvince_smallgdpr_cookies_settings';
+    public $settingsCode = 'webbook_gdpr_cookies_settings';
 
     public $settingsFields = 'fields.yaml';
 

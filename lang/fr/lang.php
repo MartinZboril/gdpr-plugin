@@ -3,9 +3,9 @@
 return [
 
   'plugin' => [
-    'name' => 'Small GDPR',
+    'name' => 'GDPR',
     'description' => 'Boîte à outils pour le GDPR',
-    'category' => 'Small plugins',
+    'category' => 'CATEGORY_CMS',
   ],
 
   'permissions' => [
@@ -111,27 +111,27 @@ return [
       'set_cookies_with_locale_comment' => 'Si défini, le consentement pour les cookies sera requis pour chaque langue séparément (utile si vous n’avez pas le même code de groupe de cookies pour toutes les langues ; nécessite le plugin Rainlab Translate).',
       ],
       ],
-      
+
       'components' => [
         'cookies_bar' => [
           'name' => 'Barre de cookies',
           'description' => 'Barre avec informations sur les cookies utilisés',
         ],
-        
+
         'cookies_manage' => [
           'name' => 'Gérer les cookies',
           'description' => 'Composant pour la gestion des cookies par l’utilisateur',
         ],
       ],
       'formwidgets' => [
-        
+
         'importpreset' => [
-      
+
           'file_name' => 'Ou entrez manuellement le chemin de votre fichier d’importation',
           'file_name_comment' => 'Chemin complet vers le fichier.',
-          'file_name_default' => '/plugins/janvince/smallgdpr/assets/presets/cookiesbar.fr.yaml',
+          'file_name_default' => '/plugins/webbook/gdpr/assets/presets/cookiesbar.fr.yaml',
           'import_confirm' => 'Voulez-vous vraiment importer vos données ?',
-          
+
           'flash' => [
             'import_successfull' => 'Les données ont été importées avec succès',
             'import_error' => 'Échec de l’importation des données. Plus d’informations dans le journal système.',
@@ -141,11 +141,11 @@ return [
           ],
         ],
         'exportpreset' => [
-      
+
           'file_name' => 'Chemin vers le fichier',
           'file_name_comment' => 'Chemin complet vers le fichier exporté.',
-          'file_name_default' => '/storage/app/media/small-gdpr-export.yaml',
-      
+          'file_name_default' => '/storage/app/media/gdpr-export.yaml',
+
           'flash' => [
             'export_successfull' => 'Les données ont été exportées avec succès',
             'export_error' => 'Il y a eu une erreur lors de l’exportation. Plus d’infos dans le journal système.',
